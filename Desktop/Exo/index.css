@@ -1,0 +1,321 @@
+
+/* POLICES */
+
+@font-face {
+    font-family: 'aniron';
+    src: url('../fonts/anirm___.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'party';
+    src: url('../fonts/partybusiness.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'twengar';
+    src: url('../fonts/tngan.ttf') format('truetype');
+}
+
+
+/* BODY */
+
+body {
+    min-width:320px;
+    width:auto;
+}
+
+
+/* MENU */
+
+.navbar-default {
+    border: 0px;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.burger {
+    background-color:#F7550A;
+    margin:0;
+}
+
+.navbar-nav {
+    font-size:1.5em;
+    position:relative;
+    font-family:aniron;
+    color:white;
+    margin: 0;
+}
+
+.nav.main_menu > li > a {
+    color:white;
+}
+
+.nav.main_menu li a:focus, .nav.main_menu li a:hover {
+    background-color:transparent;
+    text-decoration:underline;
+    color:white;
+}
+
+.navbar-text {
+    margin-left:0;
+    margin-right:0
+}
+
+
+
+
+/* PORTRAITS */
+
+/* .section_pills, .section_portrait {
+background-image:url(../ress/img/bg_light.png)
+} */
+
+
+/* MEDIA QUEYRIES */
+
+@media (max-width:768px) {
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border:0;
+    }
+
+    .main_menu{
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .carousel-caption {
+        top:20%;
+        bottom:auto;
+    }
+
+
+
+    .dead {
+        font-size:9vw;;
+        font-family:party;
+        position:absolute;
+        top:5%;
+        left:8%;
+        right:10%;
+        padding-top:2%;
+        padding-bottom:2%;
+        text-align:center;
+        width:80%;
+        color:red;
+    }
+
+    h1, h2 {
+        font-size:1.2em;
+    }
+
+    .navbar-text {
+        visibility:hidden;
+        margin:0;
+        height:0px;
+    }
+
+    .balises_twengar {
+        color:#F7550A;
+        font-family:twengar
+    }
+
+
+    .effet-pills {
+        color:#F7550A;
+        font-family:twengar;
+        font-size:1.1em;
+        visibility:hidden;
+    }
+
+    .nav.nav_onglet > li > a:hover .effet-pills {
+        visibility:visible;
+    }
+
+
+    .nav.nav_onglet > li > a {
+        font-size:1.2em;
+        font-family:aniron;
+        color:#635A5A;
+    }
+
+    .nav.nav_onglet > li > a:hover {
+        color:#F7550A;
+        background-color:transparent;
+        text-decoration:underline;
+    }
+
+    .liens_pills {
+        width:80%;
+        margin:auto;
+    }
+
+    .nav {
+        font-size: 3vw;
+        left: 3%;
+    }
+
+    .carousel p {
+        font-size:4vw;
+    }
+
+    .carousel h1 {
+        font-size:5vw;
+    }
+
+
+
+}
+
+@media (max-width:992px) {
+    .name, .name_gimli{
+        font-size:2em;
+    }
+
+    .legend_portrait, .reward {
+        font-size:200%;
+    }
+
+    .thumbnail:hover .name, .thumbnail:hover .name_gimli {
+        font-size:300%;
+        top:50%
+    }
+}
+
+@media (max-width:1280px) {
+    .main_menu{
+        font-size: 10px;
+        margin: 0;
+    }
+
+    .logo2{
+        height: 120%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width:915px) {
+
+    .logo2{
+        height: 90%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+/* RINGS */
+
+.placement {
+    text-align: center;
+    font-family: aniron;
+    font-size: 234%;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.premier, .deux, .trois {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.ring1 {
+    border: 5px solid orange;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(255, 137, 41, 0.75);
+}
+
+.ring2 {
+    border: 5px solid #ffc642;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(255, 198, 66, 0.72);
+}
+
+.placement2 {
+    text-align: center;
+}
+
+.ring3_1 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 13px;
+    margin-left: -12px;
+}
+
+.ring3_2 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 26px;
+    margin-left: -24px;
+}
+
+.ring3_3 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 39px;
+    margin-left: -36px;
+}
+
+.ring3_4 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 52px;
+    margin-left: -48px;
+}
+
+.ring3_5 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 65px;
+    margin-left: -60px;
+}
+
+.ring3_6 {
+    border: 5px solid black;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: 2px 2px 0px rgba(59, 59, 59, 0.75);
+    padding: 78px;
+    margin-left: -72px;
+}

@@ -1,0 +1,49 @@
+@mixin anneau($size, $color, $shadow) {
+    border : 5px solid $color;
+    border-radius : 50%;
+    height: $size;
+    width: $size;
+    display: inline-block;
+    vertical-align: middle;
+    box-shadow: $shadow;
+}
+@mixin texte {
+    text-align: center;
+    font-family: aniron;
+    font-size: 234%;
+    margin : 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+@mixin ligne{
+    display : flex;
+    justify-content : center;
+    margin-bottom : 5%;
+}
+
+.placement {
+    @include texte;
+}
+.ligne01, .ligne02, .ligne03{
+    @include ligne
+}
+
+.ring1 {
+    @include anneau(70px, orange, 2px 2px 0px rgba(255, 137, 41, 0.75));
+}
+
+.ring2 {
+    @include anneau(100px, #ffc642, 2px 2px 0px rgba(255, 198, 66, 0.72));
+}
+
+.placement2{
+    text-align: center;
+}
+@for $i from 1 through 6 {
+    .ring3_#{$i} {
+        @include anneau($i * 15px, black, 2px 2px 0px rgba(59, 59, 59, 0.75));
+        padding : $i*13px;
+        margin-left : $i*-12px;
+
+    }
+}
